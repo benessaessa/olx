@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olx</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand ml-5" href="#"><img src="images/OLX.png" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" dir="rtl">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> الرئيسية <i class="fa fa-home"></i><span class="sr-only">(current)</span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="announcement.html" target="_blank"> إعلانات <i class="fa fa-building"></i></a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="addAnnounce.html" target="_blank"> إضافة إعلان  <i class="fas fa-plus-circle"></i></a>
+          </li>
+        </ul>
+        <button class="btn btn-light mr-2">حسابي <i class="fa fa-user" style="color: blue"></i></button>
+      </div>  
+    </nav><br><br>
+    <!-- End of Navbar -->
+    <!-- Searh -->
+    <div class="search"> 
+      
+      <div class="container mt-3  p-4"> 
+        <div class="row" dir="rtl">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+            <input type="text" aria-label="First name" placeholder="  &#128269; إبحث ... " class="form-control ml-2">
+          </div><br><br>
+          <div class="col-lg-6 col-md-6 col-sm-8 col-12">
+            <div class="input-group">
+              <input type="text" class="form-control border-left-0" placeholder="&marker; إبحث عن المنطقة هنا ">
+              <select name="" id="" class="form-control border-right-0"> 
+                  <option value="" selected disabled> &phone; +0 كلم </option>
+                  <option value=""> 01114205243</option>
+              </select><br><br>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <select name="" id="" class="form-control font-weight-bold" style="border: 2px solid #ffb00b;border-radius: 5px;"> 
+              <option value="" selected disabled> &marker; عقارات للإيجار </option>
+              <option value=""> المنيا - ملوي </option>
+            </select>
+          </div>
+        </div> 
+        
+        <div class="form-check text-right p-2 mr-3" dir="rtl">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="">&nbsp;&nbsp;&nbsp; أظهر فقط الإعلانات المرفقة بصور
+          </label>
+        </div>
+
+        <div class="row" dir="rtl" id="sell">
+          <div class="col-lg-2 col-sm-3">
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="height: 30px;padding: 0px 10px 0px 2px">
+                   إختر فئة &nbsp; &nbsp; 
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div><br> 
+          </div>
+          <div class="col-lg-5 col-sm-3">
+            <input type="text" class="form-control" placeholder="السعر من "><br>
+            <input type="text" class="form-control" placeholder="السعر إلي  "><br>
+          </div>
+          <div class="col-lg-5 col-sm-4">
+              <input type="text" class="form-control" placeholder="المساحة(م2) من "><br>
+              <input type="text" class="form-control" placeholder="المساحة (م2) إلي  "><br>
+          </div>
+        </div>
+
+        <button class="btn btn-outline-primary">بحث <i class="fa fa-search"></i></button>
+        <button class="btn"> <a href="#"><i class="fa fa-star"></i> إحفظ البحث المفضل</a></button>
+        <br><br>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">الأعلي سعرا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الأقل سعرا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الأحدث</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">رتب حسب </a>
+            </li>
+        </ul>
+      </div>
+      
+    </div><br>
+    <!-- End of search -->
+    <!--content Data -->
+    <div class="contentData">
+
+      <div class="container">
+        <h4 class="text-right">عقارات للإيجار في مصر </h4><br>
+        <ul class="nav" dir="rtl">
+          <li class="nav-item">
+            <a class="nav-link" href="#">كل الإعلانات ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">  عقارات </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">> عقارات للإيجار في مصر </a>
+          </li>
+        </ul><hr>
+        <ul class="nav" dir="rtl">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> شقة للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> عقار تجاري للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> شاليهات للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> مطلوب للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> غرف للإيجار </a>
+          </li><br>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> فلل للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> جراج للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> أرض للإيجار </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> أبنية للإيجار </a>
+          </li>
+        </ul><hr>
+        <h4 class="text-right">إعلانات مميزة </h4><br>
+      <div class="row mt-1" style="clear: both;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <img src="images/1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
+                  <p>  5,000,000 ج.م  </p>
+                  <p>عقارات >> فيلا </p>
+                </div>
+                <div class="card-footer">
+                  <small>اليوم 10:34 </small><br>
+                  <small> القاهرة الجديدة - التجمع الخاس </small>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <img src="images/1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
+                  <p>  5,000,000 ج.م  </p>
+                  <p>عقارات >> فيلا </p>
+                </div>
+                <div class="card-footer">
+                  <small>اليوم 10:34 </small><br>
+                  <small> القاهرة الجديدة - التجمع الخاس </small>
+                </div>
+              </div>  
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <img src="images/1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
+                  <p>  5,000,000 ج.م  </p>
+                  <p>عقارات >> فيلا </p>
+                </div>
+                <div class="card-footer">
+                  <small>اليوم 10:34 </small><br>
+                  <small> القاهرة الجديدة - التجمع الخاس </small>
+                </div>
+              </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <!-- End of content Data -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/file.js"></script>
+  </body>
+</html>

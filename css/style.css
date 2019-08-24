@@ -1,0 +1,68 @@
+/* ----------------------- Body Style ------------------------- */
+body {
+    position: relative; 
+}
+/* ----------------------------------------------------------- */
+/* --------------------  Navbar Style ------------------------ */
+
+.navbar,.navbar-nav{
+    margin: 0;
+    padding: 0;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.navbar .navbar-brand{
+    background-color: #009688;
+}
+.navbar .navbar-brand img{
+    padding: 0px 7px;
+    height: 56px;
+    width: 170px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #FFFFFF !important;
+}
+.navbar .navbar-nav .nav-item{
+    padding:14px 10px;
+}
+.navbar .navbar-nav .nav-item:hover{
+    background-color:rgba(237, 205, 31, 1);
+}
+/* .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+    transition: background-color .2s, red .2s;
+} */
+
+.navbar-nav li.active{
+	background-color: rgba(237, 205, 31, 1);
+	color: #fff;
+}
+/* -------------------------------------------- */
+.search{
+    background-color: #f7f7f7;
+}
+/* -------- */
+.nav .nav-item .nav-link:hover{
+    background-color:#f7f7f7;
+    color: black;
+}
+/* ---------------------------------------- */
+.announce .icons span{
+    display: inline-block;
+    width: 70px;
+    border: 2px dotted white;
+    height: 70px;
+    margin: 6px;
+    background-color: rgb(241, 187, 187);
+}
+.contrInput .form-control{
+    width: 50%;
+}
+/* ------------------------------------ */
+@media screen and (min-width: 480px) {
+    .contrInput label{
+      margin-top: 0px;
+    }
+  }
