@@ -66,3 +66,35 @@ body {
       margin-top: 0px;
     }
   }
+  /* ------------------------- pagination ------------------ */
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  /* ------------------------------ Footer --------------- */
+  .foot a,p{
+      font-size: 12px;
+      color: #133834 !important;
+  }
+.image_footer{
+    background-image: url(../images/footer.JPG);
+    height: 100px;
+    background-size: cover;
+}
+/* ---------- Modal Image ------------------- */
+.announce a{
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 14px;
+}
+/* ------------------------------------- */

@@ -44,7 +44,11 @@
           </div><br><br>
           <div class="col-lg-6 col-md-6 col-sm-8 col-12">
             <div class="input-group">
-              <input type="text" class="form-control border-left-0" placeholder="&marker; إبحث عن المنطقة هنا ">
+              <select name="" id="" class="form-control border-left-0"> 
+                <option value="" selected disabled> &marker; إبحث عن المنطقة هنا </option>
+                <option value=""> المنيا </option>
+                <option value=""> ملوي </option>
+              </select>
               <select name="" id="" class="form-control border-right-0"> 
                   <option value="" selected disabled> &phone; +0 كلم </option>
                   <option value=""> 01114205243</option>
@@ -155,55 +159,201 @@
           </li>
         </ul><hr>
         <h4 class="text-right">إعلانات مميزة </h4><br>
-      <div class="row mt-1" style="clear: both;">
+      <div class="row mt-1 text-right" style="clear: both;">
+ 
         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="card">
+          <a href="announcement.html">
+            <div class="card p-4">
                 <img src="images/1.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
+                  <h5 class="card-title"> <a href="addAnnounce.html">فيلا للبيع صن سيتي كمبوند </a></h5>
                   <p>  5,000,000 ج.م  </p>
                   <p>عقارات >> فيلا </p>
-                </div>
-                <div class="card-footer">
                   <small>اليوم 10:34 </small><br>
-                  <small> القاهرة الجديدة - التجمع الخاس </small>
+                  <small> القاهرة الجديدة - التجمع الخاس </small><br>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> رقم الهاتف </button>
                 </div>
+              </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <a href="announcement.html">
+              <div class="card p-4">
+                <img src="images/1.webp" class="card-img-top" alt="...">
+                <h5 class="card-title"> <a href="addAnnounce.html">فيلا للبيع صن سيتي كمبوند </a></h5>
+                <p>  5,000,000 ج.م  </p>
+                <p>عقارات >> فيلا </p>
+                <small>اليوم 10:34 </small><br>
+                <small> القاهرة الجديدة - التجمع الخاس </small><br>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> رقم الهاتف </button>
               </div>
+            </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="images/1.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
-                  <p>  5,000,000 ج.م  </p>
-                  <p>عقارات >> فيلا </p>
-                </div>
-                <div class="card-footer">
-                  <small>اليوم 10:34 </small><br>
-                  <small> القاهرة الجديدة - التجمع الخاس </small>
-                </div>
-              </div>  
+              <a href="announcement.html">
+                <div class="card p-4">
+                    <img src="images/1.webp" class="card-img-top" alt="...">
+                    
+                      <h5 class="card-title"> <a href="addAnnounce.html">فيلا للبيع صن سيتي كمبوند </a></h5>
+                      <p>  5,000,000 ج.م  </p>
+                      <p>عقارات >> فيلا </p>
+                    
+                    
+                      <small>اليوم 10:34 </small><br>
+                      <small> القاهرة الجديدة - التجمع الخاس </small><br>
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> رقم الهاتف </button>
+                    </div>
+                  </a>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="images/1.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">فيلا للبيع صن سيتي كمبوند </h5>
-                  <p>  5,000,000 ج.م  </p>
-                  <p>عقارات >> فيلا </p>
+        
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title text-center ml-auto"> إتصل بنا </h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="card-footer">
-                  <small>اليوم 10:34 </small><br>
-                  <small> القاهرة الجديدة - التجمع الخاس </small>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="images/OLX.png" width="100%" height="200px">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" dir="rtl" placeholder="الإسم " aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                          <input type="number" class="form-control" dir="rtl" placeholder="رقم التليفون" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                          </div>
+                        </div>   
+                        <button class="btn btn-primary btn-block"> أظهر الرقم </button>
                 </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+                </div>
+          
               </div>
-        </div>
-      </div>
-      </div>
+            </div>
+          </div>
 
+      </div><br>
+      <!-- -------- Pagination ------------ -->
+        <div class="pagination" dir="rtl">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">8</a>
+          <a href="#">9</a>
+          <a href="#">10</a>
+          <a href="#">11</a>
+          <a href="#">12</a>
+          <a href="#">13</a>
+          <a href="#">..</a>
+          <a href="#">500</a>
+          <a href="#"> الصفحة التالية &raquo;</a>
+        </div><br><hr>
+      </div>
     </div>
+    
     <!-- End of content Data -->
 
+    <section class="foot">
+      
+        <div class="container text-right">
+            <a href="#"> مصر </a>
+            <div class="row" dir="rtl">
+                <div class="col-6 col-lg-2 text-right"><br>
+                  <a href="#">القاهرة (56,119) </a><br>
+                  <a href="#">السويس (3,074)</a><br>
+                  <a href="#"> الإسماعيلية (1,419) </a><br>
+                  <a href="#"> المنوفية (795)</a> <br>
+                  <a href="#">الفيوم (354)</a><br>
+                  <a href="#">كل الإعلانات...</a>
+                </div>
+              
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الجيزة (25,778) </a><br>
+                <a href="#">  القليوبية (2,464) </a><br>
+                <a href="#"> دمياط (1,334) </a><br>
+                <a href="#"> البحيرة (495) </a>
+                <a href="#">أسوان (322)</a>
+              </div>
+              <div class="col-12 col-lg-1"></div>
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الإسكندرية (17,934) </a><br>
+                <a href="#"> الغربية (2,179) </a><br>
+                <a href="#"> بورسعيد (1,173)</a><br>
+                <a href="#"> المنيا (423) </a><br>
+                <a href="#">كفر الشيخ (302)</a>
+              </div>
+              <div class="col-lg-1 col-1"></div>
+              <div class="col-5 col-lg-2 text-right"><br>
+                <a href="#">مطروح (8,274)</a><br>
+                <a href="#">الشرقية (2,093)</a><br>
+                <a href="#">أسيوط (1,066)  </a><br>
+                <a href="#"> بني سويف (423) </a>
+                <a href="#">قنا (274)</a>
+              </div>
+              <div class="col-6 col-lg-2"><br>
+                <div class="text-right">
+                  <a href="#">الدقهلية (3,276)</a>
+                  <a href="#">البحر الأحمر (1,893)</a>
+                  <a href="#">جنوب سيناء (1,024)</a>
+                  <a href="#">سوهاج (364)</a>
+                  <a href="#"> الأقصر (151) </a>
+                </div>
+              </div>
+            </div><hr>
+            <div class="text-right announce p-2" style="background-color: rgb(165, 227, 230);">
+              <p>أكثر البحوث رواجاً:</p>
+              <a href="#">محل </a><a href="#">محل </a><a href="#">محل </a><a href="#">محل </a><a href="#">محل </a>
+            </div><hr>
+          </div>
+      <div class="container">
+        <div class="row" dir="rtl">
+          <div class="col-lg-2 col-6"><br><img class="mt-3 float-right" src="images/footolx.png" width="55%" height="55%"></div>
+          
+          <div class="col-6 col-lg-2 text-right"><br>
+            <a href="#">تعرف علينا </a><br>
+            <a href="#">وظائف</a><br>
+            <a href="#">قواعد السلامة </a><br>
+            <a href="#"> مواقع أوليكس الأخري <i class="fas fa-caret-down"></i></a>
+          </div>
+          <div class="col-12 col-lg-1"></div>
+          <div class="col-6 col-lg-2 text-right"><br>
+            <a href="#"> الأسئلة الأكثر تداولا </a><br>
+            <a href="#"> شروط الإستخدام </a><br>
+            <a href="#"> سياسة الخصوصية </a><br>
+            <a href="#"> خريطة المحافظات </a><br>
+            <a href="#">خريطة الموقع</a>
+          </div>
+          <div class="col-lg-1 col-1"></div>
+          <div class="col-5 col-lg-2 text-right"><br>
+            <a href="#">تعرف علينا </a><br>
+            <a href="#">وظائف</a><br>
+            <a href="#">قواعد السلامة </a><br>
+            <a href="#"> مواقع أوليكس الأخري <i class="fas fa-caret-down"></i></a>
+          </div>
+          <div class="col-6 col-lg-2"><br>
+            <div class="float-left">
+              <img src="images/gitolx.png" width="100%">
+              <img src="images/appolx.png" class="ml-2" width="90%"><br>
+              <p class="text-center">حمّل مجاناً التطبيق الخاص بموبايلك</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image_footer"></div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
