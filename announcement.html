@@ -82,7 +82,7 @@
                     </div> 
                     <div class="container d-flex justify-content-center">
                             <!-- Button to Open the Modal -->
-                            <img src="images/1.webp" height="200px" width="100%" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <img style="color: white" src="images/1.webp" height="200px" width="100%" data-toggle="modal" data-target="#myModal">
                             <!-- The Modal -->
                             <div class="modal fade" id="myModal">
                               <div class="modal-dialog modal-dialog-centered">
@@ -96,7 +96,37 @@
                                   
                                   <!-- Modal body -->
                                   <div class="modal-body">
-                                    <img src="images/1.webp" width="100%">
+                                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                        <!-- Indicators -->
+                                        <ul class="carousel-indicators">
+                                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                          <li data-target="#demo" data-slide-to="1"></li>
+                                          <li data-target="#demo" data-slide-to="2"></li>
+                                        </ul>
+                                      
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="images/vela.jpg" alt="Los Angeles" height="300px" width="100%">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="images/vela2.jpg" alt="Chicago" height="300px" width="100%">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="images/1.webp" alt="New York" height="300px" width="100%">
+                                          </div>
+                                        </div>
+                                      
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                          <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                          <span class="carousel-control-next-icon"></span>
+                                        </a>
+                                      
+                                      </div>
                                   </div>
                           
                                 </div>
