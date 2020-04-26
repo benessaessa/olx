@@ -1,6 +1,7 @@
 /* ----------------------- Body Style ------------------------- */
 body {
     position: relative; 
+    font-family: 'Cairo', sans-serif;
 }
 /* ----------------------------------------------------------- */
 /* --------------------  Navbar Style ------------------------ */
@@ -8,6 +9,9 @@ body {
 .navbar,.navbar-nav{
     margin: 0;
     padding: 0;
+}
+.form-control{
+    height: 3rem;
 }
 .navbar-dark .navbar-toggler{
     border: 3px solid rgb(0, 255, 34);
@@ -18,7 +22,7 @@ body {
     padding: 2px;
 }
 .navbar-collapse{
-    text-align: center;
+    text-align: right;
 }
 .navbar .navbar-brand{
     background-color: #009688;
@@ -57,13 +61,21 @@ body {
     color: black;
 }
 /* ---------------------------------------- */
+.announce{
+    background-color: rgb(165, 227, 230);
+}
 .announce .icons span{
     display: inline-block;
     width: 70px;
     border: 2px dotted white;
     height: 70px;
     margin: 6px;
+    cursor: pointer;
     background-color: rgb(241, 187, 187);
+}
+.icons span p i{
+    padding: 0.4rem 0.3rem;
+    color: blue;
 }
 .contrInput .form-control{
     width: 50%;
@@ -73,7 +85,26 @@ body {
     .contrInput label{
       margin-top: 0px;
     }
-  }
+}
+@media screen and (max-width: 480px) {
+    .inputBlock{
+        width: 100% !important; 
+        margin: 1rem 0;
+    }
+    .boxForm{
+        margin-top: 0.5rem;
+    }
+    .contrInput .form-control{
+        width: 100%;
+    }
+    .contrInput label{
+        float: right;
+    }
+    .btnSrh,.btnSave{
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+}
 
   /* ------------------------------ Footer --------------- */
   .foot a,p{
@@ -92,3 +123,40 @@ body {
     font-size: 14px;
 }
 /* ------------------------------------- */
+.boxForm{
+    border: 2px solid #ffb00b;
+    border-radius: 5px;
+}
+.profBtn{
+    color: blue;
+}
+.icoonsH{
+    color: rgb(4, 252, 78);
+}
+.drpDwn{
+    height: 3rem;padding: 0px 10px 0px 2px;
+    width: 100%;
+}
+.rowAnnounce{
+    clear: both;
+}
+.rowColor{
+    color: #999;
+}
+.txtSmall{
+    font-size: 14px;
+}
+.txtVSmall{
+    font-size: 12px;
+    font-weight: bold;
+}
+.cBlack{
+    color: black
+}
+.bgLem{
+    background-color: #f7f6f6;
+}
+.safty{
+    color: black;
+    font-size: 14px;
+}
